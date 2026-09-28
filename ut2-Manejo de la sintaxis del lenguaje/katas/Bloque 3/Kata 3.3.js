@@ -9,3 +9,5 @@ Tareas en kata3_3.js:
 3. Crea una función promocionar() que reemplace el texto de la casilla en el HTML usando textContent.
 4. Asigna la acción a un botón mediante addEventListener('click', promocionar).
 */
+
+const filaAlcanzada = 8;
