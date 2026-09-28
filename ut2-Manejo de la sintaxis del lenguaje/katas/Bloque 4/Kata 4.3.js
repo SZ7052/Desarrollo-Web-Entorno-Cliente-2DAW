@@ -9,3 +9,4 @@ Instrucciones: En un archivo kata4_3.js:
 3. Si la jugada empieza por '{', usa continue para saltar la iteración sin procesarla.
 4. Si la jugada contiene '#' (jaque mate), imprímela, notifica la victoria en pantalla usando textContent y
 usa break para terminar el bucle inmediatamente.*/
+

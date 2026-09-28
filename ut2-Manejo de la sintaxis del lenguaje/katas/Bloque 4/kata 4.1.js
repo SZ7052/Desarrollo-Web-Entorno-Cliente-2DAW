@@ -8,3 +8,15 @@ Instrucciones: Crea un archivo kata4_1.js:
 3. Imprime por consola cada turno formateado con Template Literals (ej. `Turno ${jugadasSinCaptura}: sin
 peones ni capturas`).
 4. Al alcanzar el límite de 50, detén la ejecución e imprime un mensaje de tablas de partida.*/
+
+let jugadasSinCaptura = 0;
+const MAX_JUGADAS = 50;
+
+while (jugadasSinCaptura < MAX_JUGADAS){
+    jugadasSinCaptura++;
+    console.log(`jugadasSinCaptura${jugadasSinCaptura}:Movimiento sin captura`);
+}
+
+if (jugadasSinCaptura === MAX_JUGADAS){
+    console.log(`Maximo de jugadaas`);
+}
