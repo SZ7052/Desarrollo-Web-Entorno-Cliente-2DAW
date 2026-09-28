@@ -9,3 +9,24 @@ bifurcaciones condicionales complejas e informar al usuario.
 • Si enJaque === true, muestra: '¡Atención! El rey está amenazado. Debes salir del jaque.'.
 • En cualquier otro caso, muestra: 'Partida en curso normal.'.
 3. Muestra el resultado por consola y actualiza el texto de un elemento HTML con textContent.*/
+
+const enJaque = true;
+const movimientos = 40;
+const estadoElemento = document.getElementById("status-display");
+
+
+let mensajeEstado = "";
+
+if (movimientos >= 50) {
+    mensajeEstado = 'Se pueden reclamar tablas por la regla de los 50 movimientos.';
+}else if(enJaque === true){
+    mensajeEstado = '¡Atención! El rey está amenazado. Debes salir del jaque.';
+}else{
+    mensajeEstado='Partida en curso normal.';
+}
+
+console.log(mensajeEstado);
+
+if(estadoElemento){
+    estadoElemento.textContent = mensajeEstado;
+}
