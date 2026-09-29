@@ -10,8 +10,14 @@ comentarios con continue e interrumpiendo el recorrido con break cuando detectes
 const Columnas = ["a","b","c","d","e","f","g","h"];
 
 
-for (let i = 0; i < ; i++) {
-    for (let j = 0; j.length < ; j++) {
-
+for (let i = 8; i >= 1 ; i--) {
+    for (let j = 0; j< Columnas.length ; j++) {
+    const columna = Columnas[j];
+    const coordenadas = `${columna}${i}`;
+    const esClaro = (i + j) % 2 === 0;
+    const tipo = esClaro ? "Claro":"Oscuro";
+    console.log(`Casilla ${coordenadas} : tipo : ${tipo}`);
     }
 }
+console.log(`64 casillas`);
+

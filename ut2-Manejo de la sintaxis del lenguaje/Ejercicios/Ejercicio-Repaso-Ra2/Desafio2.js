@@ -19,7 +19,8 @@ const Pieza = "torre";
 let movimiento = "";
 let enroque = "";
 
-let Peón = 1||8 ? "('♛' / '♕')" : "Peón";
+let filadestino = 8;
+const Peón = (filadestino=== 1|| filadestino ===8) ? "('♛' / '♕')" : "Peón";
 
 if (!reyMovido && !torreMovida && !enJaque) {
 enroque = "Se puede hacer enroque";
@@ -34,16 +35,16 @@ switch (Pieza) {
     case "rey":
         movimiento = "El Rey mueve una casilla en cualquier dirección.";
         break;
-    case "Dama":
+    case "dama":
         movimiento = "La Dama mueve en cualquier dirección las casillas que quiera.";
         break;
-    case "Alfil":
+    case "alfil":
         movimiento = "El Alfil se mueve en diagonal.";
         break;
-    case "Caballo":
+    case "caballo":
         movimiento = "El Caballo mueve en forma de L y puede saltar piezas.";
         break;
-    case "Peón":
+    case "peón":
         movimiento = "El Peón mueve una casilla hacia adelante.";
         break;
     default:
@@ -52,5 +53,5 @@ switch (Pieza) {
 
 
 console.log(movimiento);
-
+console.log(Peón);
 
