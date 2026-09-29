@@ -52,6 +52,7 @@ switch (Pieza) {
 }
 
 
-console.log(movimiento);
-console.log(Peón);
+console.log(`Transformación del Peón para fila destino: ${filadestino} es ${Peón}`);
+console.log(`Comportamiento de la pieza : ${Pieza} : ${movimiento}`);
+console.log(`Evalución de enroque : ${enroque}`);
 
