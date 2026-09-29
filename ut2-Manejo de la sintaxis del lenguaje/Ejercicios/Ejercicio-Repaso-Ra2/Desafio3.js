@@ -21,3 +21,21 @@ for (let i = 8; i >= 1 ; i--) {
 }
 console.log(`64 casillas`);
 
+const jugadas = ["e4", "e5", "Cf3", "Cc6", "// Apertura Italiana",
+    "Ab5", "a6", "Aa4", "Cf6", "De2", "Dh4#", "Re7"];
+
+
+
+for (const jugada of jugadas) {
+    if (jugada.startsWith("//")) {
+        console.log(`Saltando Comentario : ${jugada}`);
+        continue;
+    }
+
+    console.log(`Jugadas : ${jugada}`);
+
+    if (jugada.includes("#")) {
+        console.log(`Jaque Mate en Jugada : ${jugada}`);
+        break;
+    }
+}
