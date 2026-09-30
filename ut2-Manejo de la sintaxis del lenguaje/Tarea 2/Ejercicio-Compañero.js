@@ -63,7 +63,12 @@ console.log(
 let ventajaMaterial = 0;
 
 /*Da información de que ventaja hay en la partida */
-/*Con el calculo de */
+
+/*El calculo que aplica tiene la logica de si la "ventajaMaterial "
+* diese numero positivo seria ventaja para las Blancas y en caso contrario
+* para las Negras .
+* esto daria lugar a otras configuraciones como si tiene ventaja las Blancas
+* imprimir un texto por consola o ec*/
 
 console.log(
     `Ventaja material : ${(ventajaMaterial = puntosBlancas - puntosNegras)}`,
