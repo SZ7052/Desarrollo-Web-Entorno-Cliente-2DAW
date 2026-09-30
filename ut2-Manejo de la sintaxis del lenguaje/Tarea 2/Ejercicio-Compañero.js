@@ -68,7 +68,7 @@ let ventajaMaterial = 0;
 * diese numero positivo seria ventaja para las Blancas y en caso contrario
 * para las Negras .
 * esto daria lugar a otras configuraciones como si tiene ventaja las Blancas
-* imprimir un texto por consola o ec*/
+* imprimir un texto por consola o etc*/
 
 console.log(
     `Ventaja material : ${(ventajaMaterial = puntosBlancas - puntosNegras)}`,
