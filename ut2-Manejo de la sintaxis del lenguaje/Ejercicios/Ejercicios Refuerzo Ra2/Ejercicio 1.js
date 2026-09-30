@@ -7,3 +7,27 @@ y 1 Dama (♛).
 variable mensajeVentaja.
 4. Mediante una estructura if con operadores lógicos (&&, !), verifica si las blancas pueden enrocar
 (condiciones: reyMovido === false, torreMovida === false y enJaque === false).*/
+
+const Peón=1;
+const Torre=5;
+const Dama=9;
+
+let Blancas=(2*Peón) + Torre;
+let Negras = Dama;
+
+let reyMovido = false;
+let torreMovido = false;
+let enJaque = false;
+
+let enroque;
+
+let mensajeVentaja = Blancas > Negras ? "Blancas tiene la Ventaja" : "Negras tiene la Ventaja";
+
+if(!reyMovido===false && !torreMovido===false && !enJaque===false ){
+    enroque = "No se puede enrocar";
+}else {
+    enroque = "Se puede enrocar";
+}
+
+console.log(mensajeVentaja);
+console.log(enroque);

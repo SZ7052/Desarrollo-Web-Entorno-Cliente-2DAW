@@ -5,3 +5,9 @@ Enunciado: Crea un script que simule el recorrido del tablero 8x8 mediante dos b
 oscuras
 3. Cuenta cuántas casillas claras y cuántas oscuras hay en total usando asignación compuesta (+= 1).
 4. Muestra por consola el resultado final comprobando que ambas suman 32 casillas*/
+
+for (let i = 0; i < ; i++) {
+    for (let j = 0; j < ; j++) {
+        
+    }
+}

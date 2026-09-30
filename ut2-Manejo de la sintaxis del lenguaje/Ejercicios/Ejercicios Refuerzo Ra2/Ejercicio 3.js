@@ -8,3 +8,9 @@ Pautas de Refactorización:
 2. Sustituye la comparación débil == por la estricta ===.
 3. Reemplaza la concatenación antigua con + por un Template Literal (`` `Es un \${pieza}` ``).
 4. Elimina document.write() y usa textContent asignado a un elemento del DOM.*/
+
+const pieza = "Peon";
+
+if(pieza === "Peon"){
+    document.getElementById("Pieza").textContent=(`Es un ${pieza}`)
+}
