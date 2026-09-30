@@ -7,7 +7,7 @@ const PEON = 1,
     TORRE = 5,
     DAMA = 9;
 
-/*Declara la variable let para asignar
+/*Declara la variables puntosBlancas y puntosNegras para asignar
 * los puntos que tiene el jugador de piezas blancas
 * y negras al comer las piezas anteriores*/
 
@@ -27,16 +27,29 @@ puntosNegras += ALFIL;
 puntosBlancas += TORRE;
 puntosNegras += DAMA;
 
+/*Declara la variable jugada para simular el numero de la jugada en la partida*/
 
 let jugada = 1;
 
+/*Indica el turno de cada jugador según el numero de jugada*/
+
+/*Se asigna el turno a cada uno mediante la condicional if
+* en el que se calcula el modulo de 2 de la "jugada" si es de resto 0
+* es turno de negras y el resto de jugadas turno de blancas */
+
+/*Imprime por consola que turno y que jugada es*/
 if (jugada % 2 === 0) {
-    console.log("Turno de blancas (Jugada -> ${jugada})");
+    console.log(`Turno de negras (Jugada -> ${jugada})`);
 } else {
     console.log(`Turno de blancas (Jugada -> ${jugada})`);
 }
+
+/*Intento de hacer un programa funcional*/
 jugada += 1;
 
+/*Da información de los puntos que tiene las blancas y negras en total */
+
+/*Indica por consola también el tipo de dato que es la variable "puntosBlancas":{Number} y "puntosNegras":{Number}*/
 console.log(
     `Puntos de las Blancas: ${puntosBlancas} - Tipo de dato: ${typeof puntosBlancas}`,
 );
@@ -45,7 +58,12 @@ console.log(
     `Puntos de las Negras: ${puntosNegras} - Tipo de dato: ${typeof puntosNegras}`,
 );
 
+/*Declara la variable para el calculo posterior*/
+
 let ventajaMaterial = 0;
+
+/*Da información de que ventaja hay en la partida */
+/*Con el calculo de */
 
 console.log(
     `Ventaja material : ${(ventajaMaterial = puntosBlancas - puntosNegras)}`,
