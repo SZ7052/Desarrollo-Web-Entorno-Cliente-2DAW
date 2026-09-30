@@ -27,7 +27,9 @@ puntosNegras += ALFIL;
 puntosBlancas += TORRE;
 puntosNegras += DAMA;
 
+
 let jugada = 1;
+
 if (jugada % 2 === 0) {
     console.log("Turno de blancas (Jugada -> ${jugada})");
 } else {
@@ -38,9 +40,11 @@ jugada += 1;
 console.log(
     `Puntos de las Blancas: ${puntosBlancas} - Tipo de dato: ${typeof puntosBlancas}`,
 );
+
 console.log(
     `Puntos de las Negras: ${puntosNegras} - Tipo de dato: ${typeof puntosNegras}`,
 );
+
 let ventajaMaterial = 0;
 
 console.log(
