@@ -15,3 +15,4 @@ Ejercicio 4.1: Renderizado de la Cuadrícula 5x8 (3,5 Puntos)
 suma del índice de fila y columna es par ((f + c) % 2 === 0). Acumula la cadena de texto separando celdas con
 espacios y añadiendo un salto de línea (\n) al final de cada fila.
 • Instrucción de Salida: Muestra el resultado acumulado por consola ejecutando console.log(mapaSensores)*/
+

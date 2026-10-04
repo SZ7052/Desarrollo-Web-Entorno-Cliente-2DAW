@@ -7,3 +7,18 @@ modo emergencia (nivelLicencia >= 3 || modoEmergencia), Y el quirófano NO está
 (!quirofanoBloqueado).
 3. Construye la condición lógica combinada (&&, ||, !) dentro de una estructura if / else e imprime por consola si el
     acceso se concede o se deniega.*/
+
+let biometriaOK = true;
+let nivelLicencia = 4;
+let modoEmergencia = false;
+let quirifanoBloqueado= false;
+let entrada;
+
+if (biometriaOK && (nivelLicencia>=3 ||
+    modoEmergencia===true) && quirifanoBloqueado===false) {
+    entrada= "Se concede";
+} else{
+    entrada="Se deniega";
+}
+
+console.log(entrada);

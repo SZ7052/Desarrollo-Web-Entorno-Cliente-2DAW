@@ -7,3 +7,29 @@ Encontrado', 500: 'Error Servidor'). Obligatorio incluir cláusula default para 
 - Con un operador ternario, asigna a la variable calidadServicio el valor 'ÓPTIMA' si latenciaMs < 150 o
 'DEGRADADA' en caso contrario (1,0 pt).
 */
+
+let codigoHTP = 404;
+let latenciaMs = 120;
+let mensajeHTP;
+
+
+switch(codigoHTP) {
+    case 200:
+        mensajeHTP = 'OK';
+        break;
+    case 401:
+        mensajeHTP = 'No Autorizado';
+        break;
+    case 404:
+        mensajeHTP = 'No Encontrado';
+        break;
+    case 500:
+        mensajeHTP = 'Error Servidor';
+        break;
+    default:
+        mensajeHTP = 'Error';
+}
+
+let calidadServicio = (latenciaMs < 150) ? 'ÓPTIMA' : 'DEGRADADA';
+
+console.log(`La red es ${calidadServicio} , el Error: ${mensajeHTP}`);
