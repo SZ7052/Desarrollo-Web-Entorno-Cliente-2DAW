@@ -39,3 +39,6 @@ for (const jugada of jugadas) {
         break;
     }
 }
+
+
+//https://github.com/SZ7052/Desarrollo-Web-Entorno-Cliente-2DAW/blob/master/ut2-Manejo%20de%20la%20sintaxis%20del%20lenguaje/Ejercicios/Ejercicio-Repaso-Ra2/Desafio3.js
