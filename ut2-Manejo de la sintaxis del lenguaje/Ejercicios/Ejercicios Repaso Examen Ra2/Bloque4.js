@@ -16,3 +16,19 @@ suma del índice de fila y columna es par ((f + c) % 2 === 0). Acumula la cadena
 espacios y añadiendo un salto de línea (\n) al final de cada fila.
 • Instrucción de Salida: Muestra el resultado acumulado por consola ejecutando console.log(mapaSensores)*/
 
+const FILAS = 5;
+const COLS = 8;
+const SIMBOLO_ACTIVO="#";
+const SIMBOLO_INACTIVO=".";
+let mapaSensores="";
+
+for(i=0;i<FILAS;i++){
+    for(j=0;j<COLS;j++){
+
+        let celda = ((i+j)%2===0?"#" :"." )
+        mapaSensores += `${celda} `;
+    }
+    mapaSensores +=(`\n`);
+}
+
+console.log(mapaSensores);
