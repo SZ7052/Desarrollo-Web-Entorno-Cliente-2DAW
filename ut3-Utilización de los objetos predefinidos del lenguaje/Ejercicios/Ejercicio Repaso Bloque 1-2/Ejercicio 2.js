@@ -42,7 +42,7 @@ function analizarFUNVilaAleatoria(cadenaFEN){
     //4
     let Columalea=Math.floor(Math.random()*8);
     //5
-
+    for
 
     console.log(Columalea);
     console.log(contador);
