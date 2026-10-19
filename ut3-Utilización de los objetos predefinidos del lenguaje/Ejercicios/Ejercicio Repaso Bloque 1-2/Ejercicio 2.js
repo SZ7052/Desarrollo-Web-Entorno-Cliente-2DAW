@@ -42,7 +42,22 @@ function analizarFUNVilaAleatoria(cadenaFEN){
     //4
     let Columalea=Math.floor(Math.random()*8);
     //5
-    for
+
+
+    for (let colIndex = 0; colIndex < 8; colIndex++) {
+
+        // Transformamos el número en su letra de ajedrez correspondiente
+        let letraColumna = String.fromCharCode(97 + colIndex);
+
+        console.log(`El índice ${colIndex} corresponde a la columna: ${letraColumna}`);
+    }
+
+    //6
+    let propa = ((1 / 8) * 100).toFixed(2);
+
+    let resultado = `{ fila1: "${fila1}", casillaSeleccionada: "", probabilidad: "${propa}%" }`
+
+    return resultado;
 
     console.log(Columalea);
     console.log(contador);
