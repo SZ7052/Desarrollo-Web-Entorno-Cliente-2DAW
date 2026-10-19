@@ -41,6 +41,7 @@ console.log(`Puntuación Blancas: ${puntosBlancas} (${typeof puntosBlancas}) pts
 console.log(`Ventaja Material: ${ventaja} (${typeof ventaja}) pts`);
 console.log(`Estado del Turno: Jugada ${jugada} (${typeof jugada}) (${turno} (${typeof turno}))`);
 
+//https://github.com/SZ7052/Desarrollo-Web-Entorno-Cliente-2DAW/blob/master/ut2-Manejo%20de%20la%20sintaxis%20del%20lenguaje/Ejercicios/Ejercicio-Repaso-Ra2/Desafio1.js
 
 
 

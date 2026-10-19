@@ -56,3 +56,4 @@ console.log(`Transformación del Peón para fila destino: ${filadestino} es ${Pe
 console.log(`Comportamiento de la pieza : ${Pieza} : ${movimiento}`);
 console.log(`Evalución de enroque : ${enroque}`);
 
+//https://github.com/SZ7052/Desarrollo-Web-Entorno-Cliente-2DAW/blob/master/ut2-Manejo%20de%20la%20sintaxis%20del%20lenguaje/Ejercicios/Ejercicio-Repaso-Ra2/Desafio2.js
