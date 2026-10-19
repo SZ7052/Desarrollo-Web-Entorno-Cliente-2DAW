@@ -25,7 +25,6 @@ const entrada = " TORNEO: FIDE Madrid Masters 2026 | PUNTOS: 4.5/6 | ELO_MEDIO: 
 
 
 
-
 function procesarResumenTorneo(entradas){
     //1
     let sinespacio = entradas.trim();
@@ -57,7 +56,7 @@ function procesarResumenTorneo(entradas){
 
     return result;
 
-    console.log(rendi);
+    /*console.log(rendi);
     console.log(performanceFinal);
     console.log(!Number.isNaN(elofloat));
     console.log(Number.isFinite(elofloat));
@@ -65,7 +64,7 @@ function procesarResumenTorneo(entradas){
     console.log(partidas);
     console.log(puntosganados);
     console.log(nombretorneo);
-    console.log(puntos);
+    console.log(puntos);*/
 }
 
 

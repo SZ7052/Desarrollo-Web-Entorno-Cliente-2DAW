@@ -17,3 +17,37 @@ usando String.fromCharCode(97 + colIndex).
 • 6. Cálculo de Probabilidad y Retorno (Number / toFixed): Calcula la probabilidad de seleccionar esa columna ((1 / 8) *
 100), dale formato de 2 decimales con .toFixed(2) y devuelve un objeto con:
 { fila1: "RNBQKB1R", casillaSeleccionada: "e1", probabilidad: "12.50%" }*/
+
+
+const fenPrueba = "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3";
+
+
+
+
+function analizarFUNVilaAleatoria(cadenaFEN){
+    //1
+    let cadena=cadenaFEN;
+    let final = cadena.indexOf(" ");
+    let FEN = cadena.slice(0,final);
+    //2
+    let ochofilas=FEN.split("/");
+    let fila1=ochofilas[7];
+    //3
+    let contador= 0;
+   for (let i = 0; i < fila1.length; i++){
+       if(isNaN(fila1[i])){
+           contador++;
+       }
+   }
+    //4
+    let Columalea=Math.floor(Math.random()*8);
+    //5
+
+
+    console.log(Columalea);
+    console.log(contador);
+    console.log(FEN);
+    console.log(fila1);
+}
+
+console.log(analizarFUNVilaAleatoria(fenPrueba));
