@@ -25,32 +25,34 @@ const entrada = " TORNEO: FIDE Madrid Masters 2026 | PUNTOS: 4.5/6 | ELO_MEDIO: 
 
 
 
-function procesarResumenTorneo(entradas){
+function procesarResumenTorneo(entradas) {
     //1
     let sinespacio = entradas.trim();
     let inicio = sinespacio.indexOf("TORNEO:");
     let fin = sinespacio.indexOf("|");
 
-    let nombretorneo = sinespacio.slice(inicio,fin).toUpperCase().trim();
+    let nombretorneo = sinespacio.slice(inicio, fin).toUpperCase().trim();
     //2
-    let inicio2 = sinespacio.indexOf("PUNTOS:")+7;
+    let inicio2 = sinespacio.indexOf("PUNTOS:") + 7;
     let fin2 = sinespacio.lastIndexOf("|");
 
-    let puntos = sinespacio.slice(inicio2,fin2).trim().split("/");
+    let puntos = sinespacio.slice(inicio2, fin2).trim().split("/");
 
     let puntosganados = parseFloat(puntos[0]);
     let partidas = parseInt(puntos[1]);
     //3
-    let inicio3=sinespacio.lastIndexOf("2150.80");
+    let inicio3 = sinespacio.lastIndexOf("2150.80");
 
-    let elo= sinespacio.slice(inicio3);
-    let elofloat= parseFloat(elo);
+    let elo = sinespacio.slice(inicio3);
+    let elofloat = parseFloat(elo);
+    if(!Number.isNaN(elofloat) && Number.isFinite(elofloat)) {
     //4
-    let P = puntosganados/partidas;
-    let dp = Math.round(400*Math.log10(P/(1-P)));
+
+    let P = puntosganados / partidas;
+    let dp = Math.round(400 * Math.log10(P / (1 - P)));
     let performanceFinal = Math.round(elofloat + dp);
     //5
-    let rendi = ((puntosganados/partidas)*100).toFixed(1);
+    let rendi = ((puntosganados / partidas) * 100).toFixed(1);
 
     let result = `${nombretorneo} | Rendimiento: ${rendi}% | Performance Rating: ${performanceFinal} ELO`;
 
@@ -65,6 +67,7 @@ function procesarResumenTorneo(entradas){
     console.log(puntosganados);
     console.log(nombretorneo);
     console.log(puntos);*/
+    }
 }
 
 
