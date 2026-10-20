@@ -24,7 +24,7 @@ const fenPrueba = "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 
 
 
 
-function analizarFUNVilaAleatoria(cadenaFEN){
+function analizarFENVilaAleatoria(cadenaFEN){
     //1
     let cadena=cadenaFEN;
     let final = cadena.indexOf(" ");
@@ -44,25 +44,20 @@ function analizarFUNVilaAleatoria(cadenaFEN){
     //5
 
 
-    for (let colIndex = 0; colIndex < 8; colIndex++) {
-
-        // Transformamos el número en su letra de ajedrez correspondiente
-        let letraColumna = String.fromCharCode(97 + colIndex);
-
-        console.log(`El índice ${colIndex} corresponde a la columna: ${letraColumna}`);
-    }
+    let letraColumna = String.fromCharCode(97 + Columalea);
+    let casillaSeleccionada = letraColumna + "1";
 
     //6
     let propa = ((1 / 8) * 100).toFixed(2);
 
-    let resultado = `{ fila1: "${fila1}", casillaSeleccionada: "", probabilidad: "${propa}%" }`
 
-    return resultado;
 
-    console.log(Columalea);
+    return { fila1: fila1, casillaSeleccionada: casillaSeleccionada , probabilidad: `${propa}%` };
+
+   /* console.log(Columalea);
     console.log(contador);
     console.log(FEN);
-    console.log(fila1);
+    console.log(fila1);*/
 }
 
-console.log(analizarFUNVilaAleatoria(fenPrueba));
+console.log(analizarFENVilaAleatoria(fenPrueba));
