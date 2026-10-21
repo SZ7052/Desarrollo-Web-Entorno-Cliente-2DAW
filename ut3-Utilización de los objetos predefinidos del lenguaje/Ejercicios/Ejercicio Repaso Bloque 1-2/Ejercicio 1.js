@@ -72,3 +72,13 @@ function procesarResumenTorneo(entradas) {
 
 
 console.log(procesarResumenTorneo(entrada));
+
+// === SUITE DE VERIFICACIÓN EN CONSOLA / NODE.JS ===
+console.log("=== INICIANDO PRUEBAS EJERCICIOS DE CLASE B1+B2 ===");
+// Test Ejercicio 1
+const entradaPrueba = " TORNEO: FIDE Madrid Masters 2026 | PUNTOS: 4.5/6 | ELO_MEDIO: 2150.80 ";
+const res1 = procesarResumenTorneo(entradaPrueba);
+console.log("Resultado Ejercicio 1:", res1);
+console.assert(res1.includes("FIDE MADRID MASTERS 2026"), "E1 Test Error: Nombre de torneo incorrecto");
+console.assert(res1.includes("75.0%"), "E1 Test Error: Porcentaje de rendimiento incorrecto");
+console.assert(res1.includes("2341 ELO"), "E1 Test Error: Performance FIDE esperada es 2341");

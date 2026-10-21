@@ -61,3 +61,12 @@ function analizarFENVilaAleatoria(cadenaFEN){
 }
 
 console.log(analizarFENVilaAleatoria(fenPrueba));
+
+// Test Ejercicio 2
+const fenPrueba1 = "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3";
+const res2 = analizarFENVilaAleatoria(fenPrueba1);
+console.log("Resultado Ejercicio 2:", res2);
+console.assert(res2.fila1 === "RNBQKB1R", "E2 Test Error: Fila 1 extraída debe ser RNBQKB1R");
+console.assert(res2.casillaSeleccionada.endsWith("1"), "E2 Test Error: Casilla debe terminar en fila 1");
+console.assert(res2.probabilidad === "12.50%", "E2 Test Error: Probabilidad esperada 12.50%");
+console.log("=== ¡TODAS LAS PRUEBAS DE CLASE COMPLETADAS CON ÉXITO! ===");
