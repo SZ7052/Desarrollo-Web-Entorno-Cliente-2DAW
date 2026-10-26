@@ -14,35 +14,23 @@ la redirección limpia window.location.replace('/lobby').
 { parametrosUrl: { sala: '402', jugador: 'Jugador1' }, online: true, modoPantalla: 'DESKTOP',
 registroPulso: '18/10/2026, 14:00:00' }*/
 
-let URL='http://localhost/game?sala=402&jugador=Jugador1#ronda1';
-
-console.log(gestionarMonitorSalaTorneo(URL))
-
-function gestionarMonitorSalaTorneo(urlPrueba){
-    const urlObjeto = new URL(urlPrueba || window.location.href);
+function gestionarMonitorSalaTorneo(urlPrueba) {
+    const urlObjeto = new URL(urlPrueba);
     const parametrosUrl = {};
 
     urlObjeto.searchParams.forEach((valor, clave) => {
         parametrosUrl[clave] = valor;
     });
 
-    const online = navigator.onLine;
+    const online = typeof navigator !== 'undefined' ? navigator.onLine : true;
     const registroPulso = new Date().toLocaleString('es-ES');
-
-    const anchoPantalla = window.innerWidth;
+    const anchoPantalla = typeof window !== 'undefined' ? window.innerWidth : 1200;
     let modoPantalla = 'MOBILE';
 
     if (anchoPantalla >= 1024) {
         modoPantalla = 'DESKTOP';
     } else if (anchoPantalla >= 600) {
         modoPantalla = 'TABLET';
-    }
-
-    if (!online) {
-        const deseaReconectar = window.confirm('Sin conexión. ¿Deseas reconectar con el Lobby?');
-        if (deseaReconectar) {
-            window.location.replace('/lobby');
-        }
     }
 
     return {
@@ -52,4 +40,7 @@ function gestionarMonitorSalaTorneo(urlPrueba){
         registroPulso: registroPulso
     };
 }
+
+let URL_PRUEBA = 'http://localhost/game?sala=402&jugador=Jugador1#ronda1';
+console.log(gestionarMonitorSalaTorneo(URL_PRUEBA));
 
