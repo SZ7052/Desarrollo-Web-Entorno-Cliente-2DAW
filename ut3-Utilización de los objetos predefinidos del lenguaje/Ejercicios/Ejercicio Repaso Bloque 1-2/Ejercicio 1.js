@@ -54,9 +54,7 @@ function procesarResumenTorneo(entradas) {
     //5
     let rendi = ((puntosganados / partidas) * 100).toFixed(1);
 
-    let result = `${nombretorneo} | Rendimiento: ${rendi}% | Performance Rating: ${performanceFinal} ELO`;
-
-    return result;
+    return `${nombretorneo} | Rendimiento: ${rendi}% | Performance Rating: ${performanceFinal} ELO`;
 
     /*console.log(rendi);
     console.log(performanceFinal);
