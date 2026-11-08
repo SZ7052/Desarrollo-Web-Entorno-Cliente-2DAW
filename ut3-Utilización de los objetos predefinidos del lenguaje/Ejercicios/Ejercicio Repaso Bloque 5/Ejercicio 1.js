@@ -29,7 +29,7 @@ function iniciarSesionSalaTorneo(urlPrueba, minutosExpiracion) {
     try {
         sessionStorage.setItem('fide_sesion_activa', JSON.stringify(sesionObj));
     } catch (error) {
-        console.error("Error al guardar la sesión en sessionStorage:", error);
+        console.error("Error en sessionStorage:", error);
     }
 
     const anchoViewport = window.innerWidth;

@@ -1,6 +1,6 @@
 function sincronizarEstadoTablero(cadenaFEN, temaVisual) {
     if (!navigator.onLine) {
-        alert("¡Atención! Conexión a Internet perdida. Los cambios se guardarán localmente.");
+        alert("Atención!");
         console.warn("Estado de red: Offline");
     }
 
@@ -13,7 +13,7 @@ function sincronizarEstadoTablero(cadenaFEN, temaVisual) {
     try {
         localStorage.setItem('fide_partida_guardada', JSON.stringify(partidaObj));
     } catch (error) {
-        console.error("Error: Límite de almacenamiento local superado (QuotaExceededError).", error);
+        console.error("Error: Límite local superado (QuotaExceededError).", error);
     }
 
     const temaCodificado = encodeURIComponent(temaVisual);
