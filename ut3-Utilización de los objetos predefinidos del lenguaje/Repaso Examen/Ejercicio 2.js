@@ -9,3 +9,22 @@ Procesa y limpia una cadena de noticia en bruto recibida del servidor de noticia
 • Retorno Esperado:
  Devuelve la cadena con formato: "[ECO_FORMAT] TITULAR_MAYUSCULAS" (ej. "[E0B2] CARLSEN VENCE A
 NEPOMNIACHTCHI").*/
+
+/**
+ * EJERCICIO 2 (Bloque 02: String)
+ * @param {string} cadenaNoticiaRaw - Cadena de texto bruta con el noticia.
+ * @param {string} codigoECO - 4 caracteres (rellenando con 'E' a la izquierda )
+ * @returns {string|null} Cadena formateada "[APERTURA] RESUMEN_EN_MAYUSCULAS" o null si la entrada es invÃ¡lida.
+ */
+
+const r2 = formatearTitularPartida("carlsen - nakamura en ronda final", "defensa siciliana");
+console.log(r2);
+
+function formatearTitularPartida(cadenaNoticiaRaw, codigoECO) {
+
+    const textoLimpio= cadenaNoticiaRaw.trim().replaceAll("_"," ").toLowerCase();
+
+    const ecoFmt
+
+    return `[${ecoFmt}] ${textoLimpio}`;
+}

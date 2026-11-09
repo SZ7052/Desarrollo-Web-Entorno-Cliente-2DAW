@@ -8,3 +8,22 @@ Configura las opciones de visualización según la URL del evento y las capacida
 • Retorno Esperado:
  Devuelve un objeto con la estructura: { esValidaUrl: true, esOnline: true, modoVisor: 'DESKTOP' }
 */
+
+
+
+
+/**
+ * EJERCICIO 4 (Bloque 04: BOM, window, location, navigator)
+ * @param {string} [urlRetransmisionPrueba] - URL opcional para pruebas de inspecciÃ³n.
+ * @returns {Object} Objeto { partidaId, esOnline, modoVisor }.
+ */
+
+
+const r4 = configurarTableroRetransmision("/live?partidaId=FIDE_99");
+
+function configurarTableroRetransmision(urlRetransmisionPrueba) {
+
+
+
+    return { esValidaUrl, esOnline, modoVisor };
+}
