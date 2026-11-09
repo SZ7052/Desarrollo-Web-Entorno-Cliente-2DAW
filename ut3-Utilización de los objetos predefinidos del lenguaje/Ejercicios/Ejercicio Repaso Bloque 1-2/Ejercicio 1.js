@@ -71,6 +71,7 @@ function procesarResumenTorneo(entradas) {
 
 console.log(procesarResumenTorneo(entrada));
 
+
 // === SUITE DE VERIFICACIÓN EN CONSOLA / NODE.JS ===
 console.log("=== INICIANDO PRUEBAS EJERCICIOS DE CLASE B1+B2 ===");
 // Test Ejercicio 1
